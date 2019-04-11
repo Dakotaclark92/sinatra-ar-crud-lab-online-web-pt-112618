@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head> Index </head>
+  <body>
+    <h1>Magazines</h1>
+      <% @articles.each do |article| %>
+      <h2>Article Title: <%= article[:title] %> </h2>
+      <h2>Article Content: <%= article[:content] %> </h2>
+      <% end %>
+  </body>
+</html>
